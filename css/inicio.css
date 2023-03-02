@@ -1,0 +1,560 @@
+body {
+  background: linear-gradient(249deg, #12c2e9, #c471ed, #f64f59);
+  background-repeat: no-repeat;
+  animation: animateBackground 30s ease infinite;
+  background-size: 600% 600%;
+}
+.nav {
+  color: white;
+  display: flex;
+  position: relative;
+  margin-top: 2%;
+  border: 100px;
+  align-items: center;
+  display: inline;
+}
+
+.h2 {
+  color: white;
+  padding: 0;
+  margin: 0 30px;
+}
+
+.h2 img {
+  display: flex;
+  position: relative;
+  height: 25px;
+  padding: 0;
+  margin: 5px 10px;
+  float: right;
+}
+
+.ul {
+  color: white;
+  display: inline;
+  position: relative;
+  height: 15px;
+  width: 140px;
+  border-radius: 5px;
+  border-color: white;
+  border-width: 1px;
+  border-style: solid;
+  list-style-type: none;
+  padding: 5px;
+  text-align: center;
+  margin: 0;
+  background-color: #03001c;
+}
+.ul li {
+  height: 15px;
+  display: inline-block;
+  position: relative;
+  margin: 3px;
+  border-radius: 5px;
+}
+.img {
+  display: flex;
+  height: 20px;
+  display: inline;
+  content: "";
+  position: relative;
+  margin: -2px 3px;
+  padding: 0;
+}
+.ul li:hover {
+  cursor: pointer;
+  background-color: #414bb2;
+}
+
+.ul2 {
+  font-size: 1.3rem;
+  display: flex; /* Hacemos flex al ul */
+  margin: 0;
+  padding: 30px;
+  list-style-type: none;
+}
+.ul2 li:hover {
+  cursor: pointer;
+  background-color: #414bb2;
+}
+.ul2 > li {
+  padding-top: 10px;
+  width: 295px;
+  height: 33px;
+  text-align: center;
+  border: solid 1px white;
+  border-radius: 5px;
+  background: #03001c;
+  cursor: pointer;
+}
+.ul2 li > a {
+  color: white;
+  text-decoration: none;
+}
+.albunes {
+  display: flex;
+  padding: 0;
+  margin: 0 10px;
+}
+.adele {
+  width: 1600px;
+  height: 150px;
+  background: #b3714d;
+  display: inline;
+  margin: 0 10px;
+  border: solid 1px #353232;
+  border-radius: 10px;
+  box-shadow: 2px 6px 3px darkmagenta;
+}
+
+.adele p {
+  color: white;
+  display: flex;
+  position: relative;
+  text-align: left;
+  margin: 20px 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  word-wrap: break-word;
+}
+
+.adele img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  margin: 0 10px;
+  padding: 0;
+}
+.eminen {
+  width: 1600px;
+  height: 150px;
+  margin: 0 10px;
+  border: solid 1px #353232;
+  border-radius: 10px;
+  background: #b3714d;
+  display: inline;
+  box-shadow: 2px 6px 3px darkmagenta;
+}
+.eminen p {
+  color: white;
+  display: flex;
+  position: relative;
+  text-align: left;
+  margin: 20px 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  word-wrap: break-word;
+}
+.eminen img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  margin: 0px 10px;
+  padding: 0;
+}
+.imagenes {
+  background-color: #414ab283;
+  content: "";
+  display: flex;
+  border: solid 1px #353232;
+  padding: 0 50px;
+  margin: 0 20px;
+  border-radius: 10px;
+  box-shadow: 2px 6px 3px darkmagenta;
+}
+.imagenes img {
+  height: 100px;
+  width: 100px;
+  margin: 10px 45px;
+  border-radius: 10px;
+  display: flex;
+}
+.imagenes p {
+  color: white;
+  text-align: center;
+  margin: 20px;
+}
+/*Aqui*/
+.play {
+  background-color: #4c4e57;
+  backdrop-filter: blur(10px);
+  height: fit-content;
+  width: 97%;
+  border-radius: 10px;
+  padding: 2rem 0;
+  margin: 0px 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 3px 5px 8px darkmagenta;
+}
+.titulo {
+  width: 80%;
+  height: 80%;
+  width: fit-content;
+  color: white;
+  margin-right: auto;
+  margin-left: 10%;
+}
+.titulo-cancion {
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+}
+.autor {
+  margin-top: 0.1rem;
+  font-size: 15px;
+  color: rgb(167, 167, 167);
+  letter-spacing: 0.1px;
+}
+.controles {
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.progreso-cancion {
+  margin-top: 0.6rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.progreso-var {
+  height: 3px;
+  border-radius: 3px;
+  width: 100%;
+  background-color: rgb(102, 102, 102);
+  position: relative;
+}
+.progreso {
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  border-radius: 3px;
+  background: white;
+}
+.tiempo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(167, 167, 167);
+  font-size: 12px;
+}
+.tiempo-izquierda {
+  margin-top: 0.3rem;
+  color: aqua;
+}
+.controlesCancion {
+  height: 30px;
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.icon {
+  height: 100%;
+  width: auto;
+  opacity: 0.6;
+  cursor: pointer;
+  color: white;
+  z-index: 100;
+}
+.icon:hover {
+  opacity: 1;
+}
+audio {
+  display: none;
+}
+.couldplay {
+  height: 70px;
+  border-radius: 5px;
+  margin: 0px 100px;
+  margin-top: 5px;
+  position: absolute;
+  display: inline-flex;
+}
+@keyframes animateBackground {
+  0% {
+    background-position: 0 67%;
+  }
+  50% {
+    background-position: 100% 34%;
+  }
+  100% {
+    background-position: 0% 67%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background: linear-gradient(249deg, #12c2e9, #c471ed, #f64f59);
+    background-repeat: no-repeat;
+    /*background-size: 100% 200%;*/
+    animation: animateBackground 30s ease infinite;
+    background-size: 600% 600%;
+  }
+  @keyframes animateBackground {
+    0% {
+      background-position: 0 67%;
+    }
+    50% {
+      background-position: 70% 34%;
+    }
+    100% {
+      background-position: 0% 67%;
+    }
+  }
+  .nav {
+    color: white;
+    display: flex;
+    position: relative;
+    margin-top: 2%;
+    border: 100px;
+    align-items: center;
+    display: inline;
+  }
+  .div {
+    width: 600px;
+  }
+  .ul2 {
+    margin: 0;
+    padding: 30px;
+    list-style-type: none;
+  }
+  .ul2 li:hover {
+    cursor: pointer;
+    background-color: #414bb2;
+  }
+  .ul2 > li {
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    background: #03001c;
+    cursor: pointer;
+  }
+
+  .h2 {
+    width: 600px;
+    color: white;
+    padding: 0;
+    margin: 20px 30px;
+  }
+
+  .h2 img {
+    display: flex;
+    position: relative;
+    height: 25px;
+    padding: 0;
+    margin: 5px 0;
+    float: right;
+  }
+
+  .albunes {
+    content: "";
+    display: flex;
+    padding: 0 50px;
+    margin: 50px 10px;
+  }
+
+  .adele {
+    width: 270px;
+    height: 600px;
+    margin: 0 15px;
+    border-radius: 10px;
+    position: relative;
+    background: #b3714d;
+    display: flex;
+  }
+
+  .adele p {
+    font-size: 1.1em;
+    color: white;
+    display: block;
+    position: relative;
+    text-align: left;
+    margin: 75px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    word-wrap: break-word;
+  }
+
+  .adele img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    margin: 0px 10px;
+    padding: 0;
+  }
+  .eminen {
+    width: 270px;
+    height: 600px;
+    margin: 0 10px;
+    border-radius: 10px;
+    position: relative;
+    background: #b3714d;
+    display: flex;
+  }
+  .eminen p {
+    font-size: 1.1em;
+    color: white;
+    display: block;
+    position: relative;
+    text-align: left;
+    margin: 75px;
+    padding: 0 10px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    word-wrap: break-word;
+  }
+  .eminen img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    margin: 5px 0;
+    padding: 0;
+  }
+  .imagenes {
+    width: auto;
+    height: auto;
+    background-color: #414ab283;
+    content: "";
+    position: absolute;
+    padding: 0;
+    margin: 40px 40px;
+    border-radius: 10px;
+    display: flex;
+  }
+  .imagenes img {
+    height: 100px;
+    width: 100px;
+    margin: 10px 1px;
+    padding: 0 10px;
+    border-radius: 10px;
+    display: flex;
+  }
+  .imagenes p {
+    color: white;
+    text-align: center;
+    margin: 10px 5px;
+  }
+  .play {
+    /*background-color: #353232;*/ 
+    background-color: #4c4e57;
+    backdrop-filter: blur(10px);
+    height: fit-content;
+    width: 167%;
+    border-radius: 10px;
+    padding: 2rem 0;
+    margin: 0px 40px;
+    margin-top: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 5px 8px darkmagenta;
+    /* box-shadow: 0px 2px 8px rgba(0, 0, 0, 0, 35);*/
+  }
+  .couldplay {
+    height: 70px;
+    border-radius: 5px;
+    margin: 0px 120px;
+    margin-top: 10px;
+    position: absolute;
+    display: inline-flex;
+  }
+}
+
+@media (max-height: 500px) {
+  body {
+    background-size: 200% 200%;
+  }
+  .imagenes {
+    width: auto;
+    height: auto;
+    background-color: #414bb2;
+    content: "";
+    position: absolute;
+    padding: 0;
+    margin: 20px 20px;
+    border-radius: 10px;
+    display: flex;
+  }
+  .imagenes img {
+    height: 100px;
+    width: 100px;
+    margin: 10px 11px;
+    padding: 0 10px;
+    border-radius: 10px;
+    display: flex;
+  }
+  .imagenes p {
+    color: white;
+    text-align: center;
+    margin: 10px 5px;
+  }
+
+  .adele {
+    width: 1600px;
+    height: 200px;
+    margin: 0 10px;
+    border-radius: 10px;
+    position: relative;
+    background: #b3714d;
+    display: flex;
+  }
+  .adele img{
+    margin-top: 20px;
+  }
+  .eminen {
+    width: 1600px;
+    height: 200px;
+    margin: 0 10px;
+    border-radius: 10px;
+    position: relative;
+    background: #b3714d;
+    display: flex;
+  }
+  .eminen img{
+    margin-top: 20px;
+  }
+  .play {
+    background-color: #4c4e57;
+    backdrop-filter: blur(10px);
+    height: fit-content;
+    width: 95%;
+    border-radius: 10px;
+    padding: 1rem 0;
+    margin: 0px 20px;
+    margin-top: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 5px 8px darkmagenta;
+  }
+  .couldplay {
+    height: 70px;
+    border-radius: 5px;
+    margin: 0px 120px;
+    margin-top: 10px;
+    position: absolute;
+    display: inline-flex;
+  }
+}
+

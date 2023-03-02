@@ -1,0 +1,224 @@
+:root {
+  --fondo: #1a1a1a;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    316deg,
+    rgba(14, 137, 199, 0.854) 0%,
+    rgba(253, 7, 48, 0.631) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 600% 600%;
+  animation: animateBackground 30s ease infinite;
+}
+@keyframes animateBackground {
+  0% {
+    background-position: 0 67%;
+  }
+  50% {
+    background-position: 100% 34%;
+  }
+  100% {
+    background-position: 0 67%;
+  }
+}
+.form.contenedor {
+  background-color: transparent;
+  margin-top: 0px;
+  width: 500px;
+  height: 475px;
+  border-radius: 10%;
+  border: none;
+  border-style: none;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  color: white;
+
+  /*background: linear-gradient(red, gray);*/
+}
+.form.contenedor .login-contenedor .logo > h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+.form.contenedor .login-contenedor .logo > h2:hover {
+  color: rgb(12, 232, 140);
+}
+.form.contenedor .login-contenedor label {
+  display: block;
+  font-weight: bold;
+  padding: 5px 0;
+}
+.form.contenedor .login-contenedor {
+  width: 500px;
+  margin: 0;
+}
+.logo {
+  display: inline-block;
+
+  color: white;
+}
+
+.opciones > p {
+  /*background-color: black;*/
+  text-align: center;
+}
+
+.iniciar {
+  background-color: #414bb2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 100px;
+  text-align: center;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.providers {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  margin-left: -30px;
+  margin-top: 620px;
+  text-align: center;
+}
+.providers img {
+  width: 50px;
+  height: 50px;
+}
+.socialNetwork {
+  margin: 12px;
+}
+.privacidad {
+  margin-top: 20px;
+}
+.formulario .input-text {
+  padding: 0px;
+  width: 270px;
+  height: 40px;
+  border-radius: 10px;
+
+  margin-block-end: 20px;
+  background-color: rgba(255, 255, 255, 0.74);
+  font-size: 20px;
+  border: 0px;
+}
+.formulario .input-text:focus {
+  background-color: rgba(145, 177, 245, 0.784);
+  width: 290px;
+  height: 50px;
+  color: #ffff;
+}
+.imagen {
+  position: relative;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  z-index: 100;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: 0px;
+  left: 270px;
+  top: 0px;
+}
+.imagen img {
+  width: 300px;
+  height: 210px;
+}
+.imagen img:hover {
+  filter: invert(5%);
+  transform: translateX(-20px);
+  width: 350px;
+  height: 240px;
+}
+@media screen and (max-width: 895px) {
+  .imagen img {
+    position: relative;
+    display: flex;
+    width: 200px;
+    height: 150px;
+    right: 120px;
+    bottom: 110px;
+  }
+  .imagen img:hover {
+    filter: invert(0%);
+    transform: translateX(0px);
+    width: 200px;
+    height: 150px;
+  }
+  .form.contenedor {
+    margin-top: 10px;
+    width: 290px;
+    height: 380px;
+  }
+  .providers {
+    margin-top: 600px;
+    display: block;
+    margin-left: 0px;
+  }
+  .providers img {
+    width: 50px;
+    height: 50px;
+  }
+  .form.contenedor .formulario {
+    display: block;
+    text-align: center;
+  }
+  .form.contenedor .login-contenedor .logo > h2 {
+    padding: 0;
+    margin: 0;
+    margin-top: 25px;
+    text-align: left;
+    font-size: 2rem;
+  }
+  .formulario label {
+    font-size: 1.5rem;
+  }
+  .iniciar {
+    background-color: #414bb2;
+    color: white;
+    margin: 0;
+    padding: 14px 20px;
+    margin-top: 30px;
+    width: 150px;
+    height: 45px;
+    margin-left: 70px;
+    display: flex;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+
+    text-align: left;
+    display: flex;
+    font-size: 17px;
+    cursor: pointer;
+  }
+  .formulario .input-text {
+    width: 270px;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.925);
+  }
+  .providers img {
+    width: 40px;
+    height: 40px;
+  }
+}
+.privacidad a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
