@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <div class="form contenedor">
+      <div class="login-contenedor">
+        <a class="logo">
+          <h2>Welcome to listening</h2>
+        </a>
+        <div class="imagen">
+          <img src="./img/logo.png" alt="" />
+        </div>
+
+        <form class="formulario">
+          <p>
+            <label>Email</label>
+            <input type="text" class="input-text" id="usuario" />
+          </p>
+          <p>
+            <label>Contraseña</label>
+            <input type="password" class="input-text" id="contraseña" />
+          </p>
+          <div class="opciones">
+            <p>
+              <input
+                type="submit"
+                value="Iniciar Sección"
+                class="iniciar"
+                onclick="validacion();"
+              />
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div></div>
+    <footer class="providers">
+      <div>
+        <hr />
+        <a class="socialNetwork" aria-label="" href=""
+          ><img src="./img/google-icon_preview_rev_1.png" alt=""
+        /></a>
+
+        <a class="socialNetwork" aria-label="" href=""
+          ><img src="./img/facebook_preview_rev_1.png" alt=""
+        /></a>
+
+        <a class="socialNetwork" aria-label="" href=""
+          ><img src="./img/twitter_preview_rev_1.png" alt=""
+        /></a>
+
+        <div class="privacidad">
+          <a href="#">Olvide mi Contraseña</a><br />
+          <a href="#">Privacidad</a>
+        </div>
+      </div>
+    </footer>
+    <!-- Scripts JavaScript-->
+    <script src="main.js"></script>
+  </body>
+</html>

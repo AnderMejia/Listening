@@ -1,0 +1,141 @@
+body {
+  background: #1a1a1a;
+  background: linear-gradient(316deg, rgba(14, 137, 199, 0.854) 0%, rgba(253, 7, 48, 0.631) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 300%;
+}
+.nav {
+  color: white;
+  display: flex;
+  position: relative;
+  margin-top: 2%;
+  border: 100px;
+  align-items: center;
+  display: inline;
+}
+
+.h2 {
+  color: white;
+  padding: 0;
+  margin: 0 30px;
+}
+
+.h2 img {
+  display: flex;
+  position: relative;
+  height: 25px;
+  padding: 0;
+  margin: 5px 10px;
+  float: right;
+}
+
+.ul {
+  color: white;
+  display: inline;
+  position: relative;
+  height: 15px;
+  width: 140px;
+  border-radius: 5px;
+  border-color: white;
+  border-width: 1px;
+  border-style: solid;
+  list-style-type: none;
+  padding: 5px;
+  text-align: center;
+  margin: 0;
+}
+.ul li {
+  height: 15px;
+  display: inline-block;
+  position: relative;
+  margin: 3px;
+  border-radius: 5px;
+}
+.img {
+  display: flex;
+  height: 20px;
+  display: inline;
+  content: "";
+  position: relative;
+  margin: -2px 3px;
+  padding: 0;
+}
+.ul li:hover {
+  cursor: pointer;
+  background-color: #414bb2;
+}
+
+.ul2 {
+  display: flex; /* Hacemos flex al ul */
+  justify-content: center; /* centramos en el eje horizontal*/
+  justify-content: space-evenly; /* Aplicamos separación a los elementos dentro del ul */
+  margin: 0;
+  padding: 30px;
+  list-style-type: none;
+  overflow: hidden;
+  /* border-radius: 5px;
+        border-color: white;
+        border-width: 1px;
+        border-style: solid;*/
+}
+.ul2 li:hover {
+  cursor: pointer;
+  background-color: #414bb2;
+}
+.ul2 li:nth-child(2) {
+  background-color: #b3714d;
+}
+.ul2 > li {
+  width: 295px;
+  height: 33px;
+  text-align: center;
+  border-radius: 5px;
+  border-color: white;
+  padding-top: 10px;
+  border-width: 1px;
+  border-style: solid;
+  background: #09024c;
+  cursor: pointer;
+}
+.ul2 li > a {
+  color: white;
+  text-decoration: none;
+}
+.cartas {
+  padding: 0;
+  margin: 0;
+}
+.carta {
+  display: flex;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #b3714d;
+  width: 550px;
+  height: 100px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.carta img {
+  width: 100px;
+  height: 90px;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text {
+  display: block;
+  margin-left: 10px;
+}
+.text h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+.text h3 {
+  margin-top: 3px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="css/styleRep.css" />
+  </head>
+  <body>
+    <div class="cuadro" style="--i: 0"></div>
+    <div class="cuadro" style="--i: 1"></div>
+    <div class="cuadro" style="--i: 2"></div>
+    <div class="container">
+      <div class="img-container">
+        <img src="img/song1.jpg" alt="" />
+      </div>
+      <h2 id="titulo">Titulo de la cancion</h2>
+      <h3 id="artista">Artista</h3>
+      <audio src="musica/Mon Laferte -Mi Buen Amor.mp3"></audio>
+
+      <div class="procreso-barra" id="procreso-barra">
+        <div class="procreso" id="procreso"></div>
+        <div class="duracion">
+          <span id="tiempo-actual">0:00</span>
+          <span id="tiempo-duracion">3:00</span>
+        </div>
+      </div>
+      <div class="controles">
+        <ion-icon name="play-back-outline" id="prev"></ion-icon>
+        <ion-icon name="play-outline" id="play"></ion-icon>
+        <ion-icon name="play-forward-outline" id="next"></ion-icon>
+      </div>
+      <a href="inicio.html">Volver</a>
+    </div>
+
+    <!-- Scripts JavaScript-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="js/indexR.js"></script>
+  </body>
+</html>

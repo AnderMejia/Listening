@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/inicio.css" />
+    <link rel="icon" type="html/css" href="Logo.icon" />
+    <title>Listening</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <ul class="ul">
+          <li class="li">Listening</li>
+          <li>Inicio</li>
+          <li><img class="img" src="./img/image.png" alt="" /></li>
+        </ul>
+        <div class="div">
+          <ul class="ul2">
+            <li><a href="albumes.html">Álbumes</a></li>
+            <li><a href="artistas.html">Artistas</a></li>
+            <li><a href="reproductor.html">Ir al reproductor</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="h2">
+      <h2>Álbumes </h2>
+    </div>
+    <div class="albunes">
+       <div class="adele">
+        <p><img src="./img/adele.jpg" alt="" /> Artista: Adele Laurie Blue Adkins<br />
+        Album:Set fire to The Rain<br />
+        Descripción: La canción refleja que la persona lucha contra si misma 
+        por que por un lado se da cuenta de lo toxica que es la otra persona 
+      pero por el otro lado le duele mucho dejarla ir.</p>
+      </div>
+      <div class="eminen"><p><img src="./img/eminen.jpg" alt="">Artista: Marshall Bruce Mathers<br />
+        Album: Infinite<br />
+        Descripción:La canción refleja a un hombre con problemas que lucha por sobrevivir.Le atormentan 
+      los recuerdos, como pesadillas.</p></p>
+      </div>
+    </div>
+    <div class="h2">
+      <h2>Artistas</h2>
+    </div>
+    <div class="imagenes">
+     <p><img src="./img/imaginedragons.jpg" alt="">Imagine Dragons</p>
+     <p><img src="./img/maroon5.jpg" alt="">Maroon5</p>
+      <p><img src="./img/selenag.jpg" alt="">Selena Gomez</p>
+      <p><img src="./img/shakira.jpg" alt="">Shakira</p>
+      <p><img src="./img/twenty one pilost.jpg" alt="">Twenty One Pilots</p>
+    </div>
+    <div class="play">
+      <div class="titulo">
+          <img class="couldplay" src="./img/coldplay.jpg" alt="" >
+          <h4 class="titulo-cacion">The Scientist</h4>
+          <span class="autor">Couldplay</span>
+        
+          <ion-icon name="thumbs-down-outline" id="dislike"></ion-icon>
+          <ion-icon name="thumbs-up-outline" id="like"></ion-icon>
+      </div>
+      <div class="controles">
+          <div class="progreso-cancion">
+              <div class="progreso-var">
+                  <span class="progreso"></span>
+              </div>
+          </div>
+          <div class="tiempo">
+              <span class="tiempo-izquierda" id="tiempoCancion"></span>
+              <span class="tiempo-izquierda" id="longitudCancion"></span>
+          </div>
+      </div>
+      <audio controls preload="metadata" src="./musica/The Scientist.mp3"></audio>
+      <div class="controlesCancion">
+         <img src="./img/imageizquierda.png" alt="" class="icon" id="ret10">
+          <!--<ion-icon name="play-back-outline" class="icon" id="ret10"></ion-icon>-->
+          <img src="./img/play.png" alt="" class="icon" id="btnplay">
+         
+          <!--<ion-icon name="play-outline" class="icon" id="btnpausa"></ion-icon>
+          <ion-icon  id="adel10" name="play-forward-outline" class="icon"></ion-icon>-->
+          <img src="./img/imagederecha.png" alt="" class="icon" id="adel10">
+      </div>
+  </div>
+  <script src="reproductor.js"></script>
+  </body>
+</html>

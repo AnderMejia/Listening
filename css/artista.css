@@ -1,0 +1,232 @@
+body {
+    background: #1a1a1a;
+   /* background: linear-gradient(316deg, rgb(192, 114, 216) 0%,rgba(137, 43, 226, 0.996) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 400%;*/
+    background:linear-gradient(249deg,#12c2e9,#c471ed,#f64f59);
+    background-size: 600% 600%;
+    animation: animateBackground 30s ease infinite;
+  }
+  @keyframes animateBackground {
+    0% {
+      background-position: 0 67%;
+    }
+    50% {
+      background-position: 100% 34%;
+    }
+    100% {
+      background-position: 0% 67%;
+    }
+  }
+  .nav {
+    color: white;
+    display: flex;
+    position: relative;
+    margin-top: 2%;
+    border: 100px;
+    align-items: center;
+    display: inline;
+  }
+  
+  .h2 {
+    color: white;
+    padding: 0;
+    margin: 0 30px;
+  }
+  
+  .h2 img {
+    display: flex;
+    position: relative;
+    height: 25px;
+    padding: 0;
+    margin: 5px 10px;
+    float: right;
+  }
+  
+  .ul {
+    color: rgba(255, 255, 255, 0.998);
+    display: inline;
+    position: relative;
+    height: 15px;
+    width: 140px;
+    border-radius: 5px;
+    border-color: rgba(255, 255, 255, 0.956);
+    border-width: 1px;
+    border-style: solid;
+    list-style-type: none;
+    padding: 5px;
+    text-align: center;
+    margin: 0;
+    
+  }
+  .ul li {
+    height: 15px;
+    display: inline-block;
+    position: relative;
+    margin: 3px;
+    border-radius: 5px;
+    
+  }
+  .ul li >a{
+    text-decoration: none;
+    color: white;
+  }
+  .img {
+    display: flex;
+    height: 20px;
+    display: inline;
+    content: "";
+    position: relative;
+    margin: -2px 3px;
+    padding: 0;
+  }
+  .ul li:hover {
+    cursor: pointer;
+    background-color: #414bb2;
+  }
+  
+  .ul2 {
+    display: flex; /* Hacemos flex al ul */
+    justify-content: left; /* centramos en el eje horizontal*/
+    font-size: 1rem;
+    padding: 30px;
+    list-style-type: none;
+    overflow: hidden;
+    
+  }
+  .ul2 li:hover {
+    cursor: pointer;
+    background-color: #414ab29c;
+  }
+  .ul2 li:nth-child(2) {
+    background-color: #414ab2a4;
+  }
+  .ul2 > li {
+    width: 295px;
+    height: 33px;
+    text-align: center;
+    border-radius: 5px;
+    border-color: rgba(255, 255, 255, 0.999);
+    padding-top: 10px;
+    border-width: 1px;
+    border-style: solid;
+    background: black;
+    cursor: pointer;
+  }
+  .ul2 li > a {
+    color: white;
+    text-decoration: none;
+  } 
+  .cartas{
+    padding: 0;
+    margin: 10px;
+  }
+  .carta{
+    display: flex;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #414ab283;
+    width: 400px;
+    height: 130px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    box-shadow: 2px 6px 3px darkmagenta;
+    border: solid 1.5px greenyellow;
+  }
+  .carta:hover{
+    cursor: pointer;
+    background-color:violet;
+    color: #000;
+    font-weight: bold;
+  }
+  .carta img{
+    width: 100px;
+    height: 90px;
+    border-radius: 5px;
+    margin-top: 18px;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .text {
+    display: block;
+    margin: 5px 5px;
+    margin-left: 5px;
+    font-weight: none;
+  
+  }
+  .text h3,
+  h4, p{
+    margin: 0;
+    padding: 0;
+  }
+  .text h3{
+    margin-top: 3px;
+  }
+  .todo{
+    display: flex;
+  }
+  .card2,
+  .card3{
+    margin-left: 20px;
+  }
+  
+@media screen and (max-width: 895px){
+  body{
+   background-size: 200% 400%;
+  }
+  .todo{
+    display: block;
+    margin: 10px;
+   
+  }
+  .ul2{
+    padding-left: 10px;
+    font-size: .8rem;
+    
+  }
+  .ul{
+    margin-left: 13px;
+  }
+  .ul li {
+    height: 15px;
+    display: inline-block;
+    position: relative;
+    margin-top: 30px;
+    border-radius: 5px;
+    
+  }
+  .card2,.card3{
+    margin:0;
+  }
+  .carta{
+    border: solid 1.5px greenyellow;
+    width: 310px;
+    height: 170px;
+    margin: 30px 5px ;
+    box-shadow: 2px 6px 3px darkmagenta;
+  }
+  .carta img {
+    margin: 0 5px;
+    margin-top: 40px;
+  }
+}
+@media screen and (max-height: 595px){
+  .todo{
+    
+    justify-content: center;
+    display: block;
+  }
+  .carta{
+   justify-content: center;
+   position: relative;
+   align-items: center;
+   margin: 20px 145px;
+   width: 400px;
+  }
+  .carta img{
+    margin-top: 0;
+  }
+}
