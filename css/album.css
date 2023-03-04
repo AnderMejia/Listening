@@ -61,7 +61,7 @@ body {
   margin: 3px;
   border-radius: 5px;
 }
-.ul li >a{
+.ul li > a {
   text-decoration: none;
   color: white;
 }
@@ -180,7 +180,7 @@ p {
   }
   .ul2 {
     padding-left: 10px;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   .ul {
     margin-left: 13px;
@@ -217,17 +217,19 @@ p {
     display: block;
   }
   .carta {
-    
     position: relative;
     margin: 20px 205px;
     width: 300px;
   }
   .carta img {
-    margin:20px;
+    margin: 20px;
     width: 100px;
     height: 90px;
   }
   .text {
     margin: 0;
   }
+}
+ a {
+  text-decoration: none;
 }
